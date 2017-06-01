@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ <link rel="stylesheet" type="text/css" href="css/index.css"></link>
+ </head>
+ <body onselectstart="return false">
+	<audio id='aud' autoPlay></audio>
+	<div class='main'>
+		<div class='left'>
+			<div class='data'>
+				<span id='song'>歌曲</span>
+				<span style='margin:0 3px;'>-</span>
+				<span id='singer'>歌手</span>
+			</div>
+			<div class='control' id='control'>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div id='cur'>00:00:00</div>
+				<div id='dur'>00:00:00</div>
+				<div class='con'>
+					<span>词</span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span id='sound'>
+						<div class='slineC'></div>
+						<div class='slineD'></div>
+						<div class='scircle'></div>
+					</span>
+				</div>
+				<div class='way'>
+					<div id='way'>顺序播放</div>
+					<ul id='hid'>
+						<li>顺序播放</li>
+						<li>随机播放</li>
+						<li>单曲循环</li>
+					</ul>
+				</div>
+			</div>
+			<div id='list'>
+				<ul>
+					
+				</ul>
+			</div>
+		</div>
+		<div class='right'>
+			<div class='img'>
+				<img src='img/disk.png' id='rot'/>
+			</div>
+			<div class='mask'>
+				<div id='show'></div>
+			</div>
+			<a class='author' href='http://www.diguagg.com' target='_blank'>你的德芙<strong>www.diguagg.com</strong></a>
+		</div>
+	</div>
+
+	<div id='big'></div>
+	<script type='text/javascript' src='js/audio.js'></script>
+	<script>
+		window.onload=function(){
+			audio.init();
+		}
+	</script>
+ </body>
+</html>
